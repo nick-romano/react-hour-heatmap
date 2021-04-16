@@ -198,12 +198,12 @@
       },
       "./src/daylabelcell.tsx": {
         "version": "32c0fc919cb24e5df848dd6abda8a5ccc570e5c6718e10ba13499b2760c4cd8e",
-        "signature": "7c696fb58ec3f99174433f163d94f0272bd7bf2922968694575f10adf820b41a",
+        "signature": "eeea1deedc1ac01d493377a143d581061841922bddc88476cc248b510e77de2e",
         "affectsGlobalScope": false
       },
       "./src/hourlabelrow.tsx": {
         "version": "82147387fc442b7a3cde78b46eec9357116f2db2e43e44c801bd73b717a7a01c",
-        "signature": "3664c850a877f7575d47f14e42728a9aff85dead1a353bb4218b87fb37967593",
+        "signature": "c97364755b9ae86eabda17d3097d674f28cd869c473cee757d30881ffd7967db",
         "affectsGlobalScope": false
       },
       "./node_modules/reactjs-popup/dist/types.d.ts": {
@@ -217,8 +217,8 @@
         "affectsGlobalScope": false
       },
       "./src/types/interfaces.ts": {
-        "version": "c85599c2e19018e732665e1fc0117879a1c43d381e96c9247fd10dec3af6531c",
-        "signature": "49ce4c43ec0ff0e6498401996dbab71146c676c844f7484712d079242c09ee5e",
+        "version": "330ff2b0f9faad9da402d8fcb654ab98b81a98d6a421f226da166219efb444fd",
+        "signature": "5f0a42b3884c80736be9e78a8dd9ce89b1df79a313e9b24db2bae0a027c91eb2",
         "affectsGlobalScope": false
       },
       "./src/hourcell.tsx": {
@@ -228,7 +228,7 @@
       },
       "./src/types/enums.ts": {
         "version": "aef6979d4ef54e1041d06b260ea98b8031bbd22ed2b9d76e8bf566dc6496a7cb",
-        "signature": "04d39b2b7a3a88f26826fec7cd8b61dc5cb8f205bed706e5e165144e28caa130",
+        "signature": "a85807d9118f321f8acda6b916d28670e3030f423aca1202418dab13c7025bf8",
         "affectsGlobalScope": false
       },
       "./src/hourrow.tsx": {
@@ -246,14 +246,19 @@
         "signature": "76ecf8edd438ddf3c43370bd18756ffa1f63fa2c95463d5619d28c526d7731dd",
         "affectsGlobalScope": false
       },
+      "./src/utils.ts": {
+        "version": "ce467d245fa34cd2fa83592230ca8fe6045b2f0a873b1e27f97d257577e85bee",
+        "signature": "1cc7fb7fb9f447866fc894b50147571ecb7d2de2a29c76c61d5e113563d77a3e",
+        "affectsGlobalScope": false
+      },
       "./src/classes/heatmapdatastore.ts": {
-        "version": "db7f0a65f91480a7ff2091cc1cf652f0cc704c43933f9cb2d2b6ea786f1fcaa1",
-        "signature": "9a7942fb0296c5cb1e437474744542290066332430b85700ea5ebcc0bc647930",
+        "version": "321dde9b62633f87f22cfe6812eaa4fcac5b88cbc1963cc73be15cf7ea923547",
+        "signature": "0fc711d602b1851fed11468b814e9a05fab489fc18f0b389ce4a9ee425665f1d",
         "affectsGlobalScope": false
       },
       "./src/heatmap.tsx": {
-        "version": "502b97f28f1f3b032d2ac2190a9cd44082a8225829eadb93fc620ae39f5358dc",
-        "signature": "0abc983d7c522b74548d45eaae37d9cf4534009d5557a1db6fe23a0b2cbdd3dc",
+        "version": "f3b3f5eab29d7be9c32df3863d0cc54ee34b1aba53a198c8a8bf3315a6ef47f6",
+        "signature": "598172171f0e0f6099aec9eb1cbf768e3caa732ae482e3350374077513b887f9",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/styled-components/cssprop.d.ts": {
@@ -266,9 +271,9 @@
         "signature": "7e4d2bf13638004106588fb1c7cf34c9e71fd1c0722c7628e092e40ae4506a56",
         "affectsGlobalScope": false
       },
-      "./src/utils.ts": {
-        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "./src/utils.test.ts": {
+        "version": "bf2919f33b15c3384e7c1419203184d161b65691a34f6b5c027c90c752da370f",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
       "./node_modules/jest-diff/build/cleanupsemantic.d.ts": {
@@ -558,6 +563,7 @@
       "rootDir": "./src",
       "composite": true,
       "removeComments": true,
+      "downlevelIteration": true,
       "strict": true,
       "types": [
         "react",
@@ -570,6 +576,7 @@
       "esModuleInterop": true,
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
+      "watch": true,
       "configFilePath": "./tsconfig.json"
     },
     "referencedMap": {
@@ -858,7 +865,8 @@
       ],
       "./src/classes/heatmapdatastore.ts": [
         "./node_modules/@types/d3-scale/index.d.ts",
-        "./src/types/interfaces.ts"
+        "./src/types/interfaces.ts",
+        "./src/utils.ts"
       ],
       "./src/daylabelcell.tsx": [
         "./node_modules/@types/react/index.d.ts",
@@ -898,6 +906,12 @@
         "./node_modules/@types/styled-components/cssprop.d.ts",
         "./src/heatmap.tsx",
         "./src/hourcell.tsx"
+      ],
+      "./src/utils.test.ts": [
+        "./src/utils.ts"
+      ],
+      "./src/utils.ts": [
+        "./src/types/interfaces.ts"
       ]
     },
     "exportedModulesMap": {
@@ -1202,6 +1216,9 @@
       "./src/index.ts": [
         "./src/heatmap.tsx",
         "./src/hourcell.tsx"
+      ],
+      "./src/utils.ts": [
+        "./src/types/interfaces.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -1313,6 +1330,7 @@
       "./src/index.ts",
       "./src/types/enums.ts",
       "./src/types/interfaces.ts",
+      "./src/utils.test.ts",
       "./src/utils.ts"
     ]
   },

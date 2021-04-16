@@ -5,9 +5,11 @@ import { DayOfWeek } from './types/enums';
 import { IHeatmap } from './types/interfaces';
 import HeatmapDataStore from './classes/heatmapdatastore';
 
-const Heatmap = ({data, popup, colors, domain} : IHeatmap) => {
+const Heatmap = ({data, popup, colors, domain, valueColumn, dateColumn} : IHeatmap) => {
 
-    const ds =new HeatmapDataStore({...data, popup, colors, domain});
+    const d = HeatmapDataStore.fromRows({rows: data, dateColumn, valueColumn});
+
+    const ds =new HeatmapDataStore({...d, popup, colors, domain});
 
     return (
         <div className="tooltipBoundary">

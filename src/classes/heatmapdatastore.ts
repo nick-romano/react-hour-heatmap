@@ -1,7 +1,8 @@
-import { IcreateScale, IDay, IHeatmapDataStore, IHour } from '../types/interfaces';
+import { IDay, IHeatmapDataStore, IHour, IMinute } from '../types/interfaces';
 import { scaleQuantile } from 'd3-scale';
+import { generateDays } from '../utils';
 
-const defaultColors = ['#feedde','#fdd0a2','#fdae6b','#fd8d3c','#f16913','#d94801','#8c2d04'];
+const defaultColors = ['#feedde', '#fdd0a2', '#fdae6b', '#fd8d3c', '#f16913', '#d94801', '#8c2d04'];
 
 export default class HeatmapDataStore {
     M: IDay;
@@ -31,13 +32,13 @@ export default class HeatmapDataStore {
     };
 
     calcDomain() {
-        let uniqueValues : number[] = [];
-        this.days.forEach((day : IDay) => {
+        let uniqueValues: number[] = [];
+        this.days.forEach((day: IDay) => {
             // const sum = day.hours.reduce((a: number, b: IHour) => {
             //     return a + b.value
             // }, 0);
             day.hours.forEach((hour: IHour) => {
-                if(!(uniqueValues.indexOf(hour.value) > -1)) {
+                if (!(uniqueValues.indexOf(hour.value) > -1)) {
                     uniqueValues.push(hour.value);
                 }
             })
@@ -49,9 +50,32 @@ export default class HeatmapDataStore {
     createScale() {
         const domain = this.calcDomain();
         const colorScale = scaleQuantile()
-        .domain(domain)
-        .range(this.colors);
+            .domain(domain)
+            .range(this.colors);
         return colorScale;
     };
+
+    static fromRows({ rows, dateColumn, valueColumn }: { rows: object[], dateColumn: string, valueColumn: string }) {
+        const { M, T, W, Th, F, Sa, Su } = generateDays();
+        const dayMap: { [key: number]: IDay; } = {0: Su, 1: M, 2: T, 3: W, 4: Th, 5: F, 6: Sa};
+
+        rows.forEach((r: any) => {
+            const date = r[dateColumn] as Date;
+            const dayInt = date.getDay();
+            const hourInt = date.getHours();
+            const minuteInt = date.getMinutes();
+
+            const day: IDay = dayMap[dayInt];
+            const hour: IHour = day.hours[hourInt];
+            const minute: IMinute = hour.minutes[minuteInt];
+
+            const value = r[valueColumn] as number;
+
+            hour.value = hour.value + value;
+            minute.data = r;
+        });
+
+        return new HeatmapDataStore({M, T, W, Th, F, Sa, Su});
+    }
 
 }

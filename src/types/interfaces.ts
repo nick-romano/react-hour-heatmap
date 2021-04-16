@@ -1,7 +1,7 @@
 
 export interface IMinute {
     minute: number,
-    data?: object
+    data?: any
 };
 
 export interface IHour {
@@ -29,7 +29,9 @@ export interface IHeatmapDataStore {
 };
 
 export interface IHeatmap {
-    data: IHeatmapDataStore,
+    data: object[],
+    dateColumn: string,
+    valueColumn: string,
     popup?: React.ReactNode,
     colors?: any[],
     domain?: any[]
