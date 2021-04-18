@@ -3,7 +3,7 @@
 /js
 /coverage
 /documentation
-/.DS_Store
+*.DS_Store
 *.git
 /src
 /js
