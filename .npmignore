@@ -1,0 +1,9 @@
+*node_modules
+.vscode
+/js
+/coverage
+/documentation
+/.DS_Store
+*.git
+/src
+/js
