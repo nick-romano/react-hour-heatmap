@@ -1,17 +1,24 @@
 
-import HeatmapDataStore from '../../classes/heatmapdatastore';
-import { InputSchemaMock } from '../../__mocks__/inputSchema';
+import HeatmapDataStore from './heatmapdatastore';
 
 describe("testing heatmapdatastore constructor and methods", () => {
     it('should calculate the domain', () => {
-        const ds = new HeatmapDataStore(InputSchemaMock);
+        const ds = HeatmapDataStore.fromRows({
+            rows: [{ date: new Date("1.2.2021 14:51"), testVal: 4 }],
+            dateColumn: 'date',
+            valueColumn: 'testVal'
+        });
         const domain = ds.domain;
         expect(domain[0]).toBe(0)
-        expect(domain[1]).toBe(2)
+        expect(domain[1]).toBe(4)
     });
 
     it('should create a scale the generates different values based on input', () => {
-        const ds = new HeatmapDataStore(InputSchemaMock);
+        const ds = HeatmapDataStore.fromRows({
+            rows: [{ date: new Date("1.2.2021 14:51"), testVal: 4 }],
+            dateColumn: 'date',
+            valueColumn: 'testVal'
+        });
         const scale = ds.createScale();
         expect(scale(2) === scale(0)).toBeFalsy();
     });

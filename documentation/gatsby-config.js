@@ -7,11 +7,15 @@ module.exports = {
     social: [
       {
         name: `github`,
-        url: `https://github.com/nick-romano`
+        url: `https://github.com/nick-romano/react-hour-heatmap`
+      },
+      {
+        name: `twitter`,
+        url: `https://github.com/nick-romano/react-hour-heatmap`
       }
     ],
     sidebarConfig: {
-      forcedNavOrder: ["/introduction", "/codeblock"],
+      forcedNavOrder: ["/props", "/simple-demo"],
       ignoreIndex: true
     }
   },

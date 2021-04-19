@@ -36,25 +36,36 @@ export interface IHourCell {
   popup?: React.ReactNode
 }
 
-const HourCell: React.FC<any> = ({data, scale, height, popup}: IHourCell) => {
+const HourCell: React.FC<IHourCell> = ({ data, scale, height, popup }: IHourCell) => {
+
+  console.log(popup);
+
+  const CustomPopup = popup;
+
   return (
-    <Popup
-      trigger={open => (
-        <_HourCell 
-          center middle 
-          height={height}
-          style={{background: scale(data.value)}}
-        ></_HourCell>
-      )}
-      closeOnDocumentClick
-      on={['hover', 'focus']}
-      contentStyle={contentStyle}
-      position={['top center', 'bottom right', 'bottom left']}
-      keepTooltipInside=".tooltipBoundary"
-      arrow={false}
-    >
-      <span>{data.value}</span>
-    </Popup>
+    <div role="hour-cell">
+      <Popup
+        trigger={open => (
+          <_HourCell
+            center middle
+            height={height}
+            style={{ background: scale(data.value) }}
+          ></_HourCell>
+        )}
+        closeOnDocumentClick
+        on={['hover', 'focus', 'click']}
+        contentStyle={contentStyle}
+        position={['top center', 'bottom right', 'bottom left']}
+        keepTooltipInside=".tooltipBoundary"
+        arrow={false}
+      >
+        <span>
+          {/*
+          @ts-ignore */}
+          popup ? <CustomPopup data={data} /> : data.value
+        </span>
+      </Popup>
+    </div>
   )
 }
 

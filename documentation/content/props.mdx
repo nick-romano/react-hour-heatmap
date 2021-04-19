@@ -1,0 +1,14 @@
+---
+title: 'Props'
+description: 'Component props'
+---
+
+
+| Property | Type | Required? | Description |
+|:-----|:------:|------:|:--------:|
+| data | `object[]` | Required | An array of objects with at least one date column and one value column, which you'll define next |
+| dateColumn | `string` | Required | The key within the data objects that stores dates |
+| valueColumn | `string` | Required | The key within the data objects that will be used to bin the data per hour |
+| colors | `any[]` | Optional | Array of colors to be used for the color scale |
+| scale | [`d3.scale`](https://www.npmjs.com/package/d3-scale) | Optional | A custom d3 scale if you don't want to use the default quantile color scale |
+| domain | `number[]` | Optional |  A custom domain |

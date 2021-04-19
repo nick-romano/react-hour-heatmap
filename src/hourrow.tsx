@@ -19,7 +19,8 @@ interface IHourRow {
     dayOfWeek: DayOfWeek,
     data: IDay,
     scale: (arg0: any) => any,
-    index: number
+    index: number,
+    popup?: React.ReactNode
 }
 
 const HourRow = ({ dayOfWeek, data, scale, index }: IHourRow) => {

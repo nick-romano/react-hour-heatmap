@@ -24,8 +24,9 @@ export interface IHeatmapDataStore {
     Sa: IDay,
     Su: IDay,
     colors?: any[],
-    domain?: number[],
-    popup?: React.ReactNode
+    domain?: any[],
+    popup?: React.ReactNode,
+    scale?: (arg0: any) => any
 };
 
 export interface IHeatmap {

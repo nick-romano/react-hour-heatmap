@@ -6,4 +6,7 @@ module.exports = {
   testPathIgnorePatterns: ["/dist/", "/node_modules/"],
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   collectCoverage: true,
+  setupFilesAfterEnv: [
+    "<rootDir>/setupTests.ts"
+  ]
 };

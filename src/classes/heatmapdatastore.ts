@@ -2,7 +2,8 @@ import { IDay, IHeatmapDataStore, IHour, IMinute } from '../types/interfaces';
 import { scaleQuantile } from 'd3-scale';
 import { generateDays } from '../utils';
 
-const defaultColors = ['#feedde', '#fdd0a2', '#fdae6b', '#fd8d3c', '#f16913', '#d94801', '#8c2d04'];
+const defaultColors = ['#fff', '#a1dab4', '#41b6c4', '#2c7fb8', '#253494'];
+// ['#feedde', '#fdd0a2', '#fdae6b', '#fd8d3c', '#f16913', '#d94801', '#8c2d04'];
 
 export default class HeatmapDataStore {
     M: IDay;
@@ -15,7 +16,7 @@ export default class HeatmapDataStore {
     days: IDay[];
     scale: (arg0: any) => any;
     colors: any[];
-    domain: number[];
+    domain: any[];
 
     constructor(args: IHeatmapDataStore) {
         this.M = args.M;

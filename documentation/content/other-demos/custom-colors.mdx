@@ -1,0 +1,54 @@
+---
+title: 'Custom Colors'
+description: 'Feed custom color array as `colors` prop'
+---
+
+# Custom Colors
+- Use to `colors` prop to insert your own color to be used to scale the data. Provide as many colors 
+as you'd like. here we set `colors={['#fff','#feb24c','#f03b20']}`
+
+# Code Demo
+
+import React from 'react';
+import { Heatmap } from 'react-hour-heatmap';
+
+<Heatmap
+  data={[
+    {date: new Date("1.1.2021 01:51"), testVal: 25},
+    {date: new Date("1.2.2021 14:51"), testVal: 4},
+    {date: new Date("1.3.2021 14:51"), testVal: 12},
+    {date: new Date("1.3.2021 16:51"), testVal: 52},
+    {date: new Date("1.4.2021 16:51"), testVal: 102}
+  ]}
+  valueColumn="testVal"
+  dateColumn="date"
+  colors={['#fff','#feb24c','#f03b20']}
+/>
+
+```jsx
+import "./styles.css";
+
+import React from "react";
+import { Heatmap } from "react-hour-heatmap";
+
+export default function App() {
+  return (
+    <div className="App">
+      <Heatmap
+        data={[
+          { date: new Date("1.1.2021 01:51"), testVal: 25 },
+          { date: new Date("1.2.2021 14:51"), testVal: 4 },
+          { date: new Date("1.3.2021 14:51"), testVal: 12 },
+          { date: new Date("1.3.2021 16:51"), testVal: 52 },
+          { date: new Date("1.4.2021 16:51"), testVal: 102 }
+        ]}
+        valueColumn="testVal"
+        dateColumn="date"
+        colors={['#fff','#feb24c','#f03b20']}
+      />
+    </div>
+  );
+}
+
+```
+[Code sandbox](https://codesandbox.io/s/adoring-bartik-29nzt?file=/src/App.js)
