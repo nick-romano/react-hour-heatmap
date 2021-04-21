@@ -13,7 +13,7 @@ const _HourCell = styled(Cell)`
   /*background: #feedde;*/
   line-height: 1;
   height: 50%;
-  border-radius: 50px;
+  border-radius: 4px;
   width: 70%;
   transform: translate(15%, 40%);
   &:hover {
@@ -22,8 +22,7 @@ const _HourCell = styled(Cell)`
 `;
 
 const contentStyle = {
-  width: 100,
-  height: 50,
+  width: "unset",
   background: "#000000c9",
   color: '#f7f7f7',
   border: "0px solid"
@@ -37,8 +36,6 @@ export interface IHourCell {
 }
 
 const HourCell: React.FC<IHourCell> = ({ data, scale, height, popup }: IHourCell) => {
-
-  console.log(popup);
 
   const CustomPopup = popup;
 
@@ -62,7 +59,7 @@ const HourCell: React.FC<IHourCell> = ({ data, scale, height, popup }: IHourCell
         <span>
           {/*
           @ts-ignore */}
-          popup ? <CustomPopup data={data} /> : data.value
+          {popup ? <CustomPopup data={data} /> : data.value}
         </span>
       </Popup>
     </div>

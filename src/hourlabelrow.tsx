@@ -6,6 +6,7 @@ const HourLabelRowGrid = styled(Grid)`
     grid-gap: 1px;
     margin: 3px;
     grid-auto-rows: minmax(20px,auto);
+    padding: 0px 4px;
 `
 
 const _HourLabelCell = styled(Cell)`
@@ -13,8 +14,6 @@ const _HourLabelCell = styled(Cell)`
     writing-mode: vertical-rl;
     text-orientation: mixed;
     text-align: center;
-    // border: 1px solid #999;
-    // background: #feedde;
     line-height: 1;
     font-variant: all-small-caps;
   `

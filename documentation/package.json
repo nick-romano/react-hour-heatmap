@@ -9,12 +9,14 @@
     "build": "gatsby build"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
     "@theme-ui/prism": "^0.3.0",
     "gatsby": "^2.23.3",
     "gatsby-theme-document": "1.0.10",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-hour-heatmap": "^0.1.4",
+    "mdx.macro": "^0.2.9",
+    "react": "../node_modules/react",
+    "react-dom": "../node_modules/react-dom",
+    "react-hour-heatmap": "file:..",
     "theme-ui": "^0.3.1"
   }
 }

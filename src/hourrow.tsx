@@ -23,7 +23,7 @@ interface IHourRow {
     popup?: React.ReactNode
 }
 
-const HourRow = ({ dayOfWeek, data, scale, index }: IHourRow) => {
+const HourRow = ({ dayOfWeek, data, scale, index, popup }: IHourRow) => {
     return (
         <_Grid flow="column" columns={24} isEven={index%2==0} >
             {data.hours.map((hour, index) => (
@@ -32,7 +32,8 @@ const HourRow = ({ dayOfWeek, data, scale, index }: IHourRow) => {
                     data={hour}
                     scale={scale}
                     key={`hour-${index}`}
-                    />
+                    popup={popup}
+                />
             ))}
             <DayLabelCell height={1}>
                 {dayOfWeek}

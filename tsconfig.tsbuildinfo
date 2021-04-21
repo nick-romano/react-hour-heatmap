@@ -156,6 +156,11 @@
         "signature": "506b80b9951c9381dc5f11897b31fca5e2a65731d96ddefa19687fbc26b23c6e",
         "affectsGlobalScope": true
       },
+      "./documentation/src/app.d.ts": {
+        "version": "edc1323962b47808b83df2d2683cbb1c7c9a81af869ec1aad81cf5f076acee83",
+        "signature": "edc1323962b47808b83df2d2683cbb1c7c9a81af869ec1aad81cf5f076acee83",
+        "affectsGlobalScope": false
+      },
       "./js/out.d.ts": {
         "version": "d39b27062ceaaf17e1301eefea9f97bf4f66ac35e25b06d2e40dcfa2e1ff7c04",
         "signature": "d39b27062ceaaf17e1301eefea9f97bf4f66ac35e25b06d2e40dcfa2e1ff7c04",
@@ -207,7 +212,7 @@
         "affectsGlobalScope": false
       },
       "./src/hourlabelrow.tsx": {
-        "version": "82147387fc442b7a3cde78b46eec9357116f2db2e43e44c801bd73b717a7a01c",
+        "version": "034a450e41687bd81268935a75fcb9092f278eec786e6f506db381c1bf593d63",
         "signature": "3664c850a877f7575d47f14e42728a9aff85dead1a353bb4218b87fb37967593",
         "affectsGlobalScope": false
       },
@@ -227,8 +232,8 @@
         "affectsGlobalScope": false
       },
       "./src/hourcell.tsx": {
-        "version": "e559d33dc525a5ba3e10ab43cec207ef713974d4f133b1634ca7f26bb313c0ab",
-        "signature": "8bad082c85ad69b225024b62bead5ba39374bbda1dba5e95398ee74eeab931ce",
+        "version": "b876612bc82ee53c40d811bcc6ff2c93ab59f3caae85365e39ed66e830e9a9f9",
+        "signature": "f030a434f4c1471285b00877d92b1585e2ae2c9134881807417f10252546f270",
         "affectsGlobalScope": false
       },
       "./src/types/enums.ts": {
@@ -237,8 +242,8 @@
         "affectsGlobalScope": false
       },
       "./src/hourrow.tsx": {
-        "version": "6eab0603f83186fc6683fff71e4a3bc1aa399b63c87e44df9ec91f305e90573f",
-        "signature": "7d9f0913c3b8317e0efae1cd58aa00bbcaadacb044fd8f6e82926333cebf906f",
+        "version": "76f211f6fa30e9312d33031ac5d814c344bfd05fd74d644ff12cfdaab004ea07",
+        "signature": "960b1ef47121501ca234ce64ceb4e81dd0cc8c279e75dccaeedb4c3949f4c0c4",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/d3-time/index.d.ts": {
@@ -262,23 +267,133 @@
         "affectsGlobalScope": false
       },
       "./src/heatmap.tsx": {
-        "version": "6ae8ef30829edf78a16c004dce53add6803b79e655d690f1b57db112fcaf5d61",
+        "version": "52986c1b1fd94fa879a8925d4759919df93dc82c8c6f0d01c8b8e67fa2433e80",
         "signature": "598172171f0e0f6099aec9eb1cbf768e3caa732ae482e3350374077513b887f9",
         "affectsGlobalScope": false
       },
-      "./src/hourcell.test.ts": {
-        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "./node_modules/@types/aria-query/index.d.ts": {
+        "version": "e51e34b4d8bd97569a7101c1b77234f6a1272cbb5bd50ed649b1da3f71070300",
+        "signature": "e51e34b4d8bd97569a7101c1b77234f6a1272cbb5bd50ed649b1da3f71070300",
         "affectsGlobalScope": false
       },
-      "./node_modules/@types/styled-components/cssprop.d.ts": {
-        "version": "0d63ca84199436756e06f1ca822c1542e876146ac0715d3b72c82ac991084326",
-        "signature": "0d63ca84199436756e06f1ca822c1542e876146ac0715d3b72c82ac991084326",
+      "./node_modules/@testing-library/dom/types/matches.d.ts": {
+        "version": "b562eed438decfd54e66977c32672e36ea5332118de4255fa8b078ea2aa60d94",
+        "signature": "b562eed438decfd54e66977c32672e36ea5332118de4255fa8b078ea2aa60d94",
         "affectsGlobalScope": false
       },
-      "./src/index.ts": {
-        "version": "61d89fe7c8a6f8385c61020b68207167d9b80c9a2ceaff6d1f8631c680802ed0",
-        "signature": "7e4d2bf13638004106588fb1c7cf34c9e71fd1c0722c7628e092e40ae4506a56",
+      "./node_modules/@testing-library/dom/types/wait-for.d.ts": {
+        "version": "d64e123a450152bd381a8371224f45c873a218accbc5032b96fa7efffac051bf",
+        "signature": "d64e123a450152bd381a8371224f45c873a218accbc5032b96fa7efffac051bf",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@testing-library/dom/types/query-helpers.d.ts": {
+        "version": "3cf63bba2868a5b90e9d0031c3501e3c3b50f66448e6ac48639b0d5bff9475f2",
+        "signature": "3cf63bba2868a5b90e9d0031c3501e3c3b50f66448e6ac48639b0d5bff9475f2",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@testing-library/dom/types/queries.d.ts": {
+        "version": "5a2194569d32a5cadd019b3ce2ade4d0e2c867b0fc2a48691940b7dca6ea8887",
+        "signature": "5a2194569d32a5cadd019b3ce2ade4d0e2c867b0fc2a48691940b7dca6ea8887",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@testing-library/dom/types/get-queries-for-element.d.ts": {
+        "version": "60c5577050b9e230486a60cf05ae4ae8ce9c7bd661061bacbb797a58cb561a66",
+        "signature": "60c5577050b9e230486a60cf05ae4ae8ce9c7bd661061bacbb797a58cb561a66",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/pretty-format/build/types.d.ts": {
+        "version": "5d72971a459517c44c1379dab9ed248e87a61ba0a1e0f25c9d67e1e640cd9a09",
+        "signature": "5d72971a459517c44c1379dab9ed248e87a61ba0a1e0f25c9d67e1e640cd9a09",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/pretty-format/build/index.d.ts": {
+        "version": "02d734976af36f4273d930bea88b3e62adf6b078cf120c1c63d49aa8d8427c5c",
+        "signature": "02d734976af36f4273d930bea88b3e62adf6b078cf120c1c63d49aa8d8427c5c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@testing-library/dom/types/screen.d.ts": {
+        "version": "b1601667a5daa2b846d642276c318c8cec7b7235b3494e786c2a6a92809a058c",
+        "signature": "b1601667a5daa2b846d642276c318c8cec7b7235b3494e786c2a6a92809a058c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@testing-library/dom/types/wait.d.ts": {
+        "version": "c116c5ff714c9c491b13616c1a8b2e69394dd9e6f28cead2d41b675860c0d99a",
+        "signature": "c116c5ff714c9c491b13616c1a8b2e69394dd9e6f28cead2d41b675860c0d99a",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@testing-library/dom/types/wait-for-dom-change.d.ts": {
+        "version": "702a118d48a3dcef2324d30ac84185ab22717e118b0543dbe151972807b80ac2",
+        "signature": "702a118d48a3dcef2324d30ac84185ab22717e118b0543dbe151972807b80ac2",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@testing-library/dom/types/wait-for-element.d.ts": {
+        "version": "ad2023038c6b42e4cbc195fdf874659e27f5c99191caf2572d2003fcd1dbf695",
+        "signature": "ad2023038c6b42e4cbc195fdf874659e27f5c99191caf2572d2003fcd1dbf695",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@testing-library/dom/types/wait-for-element-to-be-removed.d.ts": {
+        "version": "7f23902e7e648f8fff1daa2d28dc29c219d80920199fd0318257fb61308f88ba",
+        "signature": "7f23902e7e648f8fff1daa2d28dc29c219d80920199fd0318257fb61308f88ba",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@testing-library/dom/types/get-node-text.d.ts": {
+        "version": "e756ac94c7de6b07a7bd4a8cd365ac40ee289586c974e33f3676b3ef48d61698",
+        "signature": "e756ac94c7de6b07a7bd4a8cd365ac40ee289586c974e33f3676b3ef48d61698",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@testing-library/dom/types/events.d.ts": {
+        "version": "cc7f5deaf4e1e2b8dde0645ae824d213cc71834a0d58d557f805f443451664a8",
+        "signature": "cc7f5deaf4e1e2b8dde0645ae824d213cc71834a0d58d557f805f443451664a8",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@testing-library/dom/types/pretty-dom.d.ts": {
+        "version": "2ac36e828c9e778acbd5a34cd57c144a875443b45d6cee38cfebb9e5756e5dca",
+        "signature": "2ac36e828c9e778acbd5a34cd57c144a875443b45d6cee38cfebb9e5756e5dca",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@testing-library/dom/types/role-helpers.d.ts": {
+        "version": "168994907c6427e885018396248c567b6214e0daa6b62d4fc1be334affa44c56",
+        "signature": "168994907c6427e885018396248c567b6214e0daa6b62d4fc1be334affa44c56",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@testing-library/dom/types/config.d.ts": {
+        "version": "a47fcf458fa122a20e74794fb227c31edc1e2ab4595a21eccfef83f27376275f",
+        "signature": "a47fcf458fa122a20e74794fb227c31edc1e2ab4595a21eccfef83f27376275f",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@testing-library/dom/types/suggestions.d.ts": {
+        "version": "60b3b7499b678b4ed4d33b566451ea66c25a0ec34f9b1b15abbba4291819c3b9",
+        "signature": "60b3b7499b678b4ed4d33b566451ea66c25a0ec34f9b1b15abbba4291819c3b9",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@testing-library/dom/types/index.d.ts": {
+        "version": "ee5c308961f2cd7a22d5e365736520dd92658dc424776aded00a7c589af4c71c",
+        "signature": "ee5c308961f2cd7a22d5e365736520dd92658dc424776aded00a7c589af4c71c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/react-dom/index.d.ts": {
+        "version": "bf2684235f5a5bf5d91c1cddb9255ecf9db2e2f2cc72c5ad4aac73033a31b81d",
+        "signature": "bf2684235f5a5bf5d91c1cddb9255ecf9db2e2f2cc72c5ad4aac73033a31b81d",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/react-dom/test-utils/index.d.ts": {
+        "version": "cb66f883d120cede42f21ddf023b8653ccb640c33383948cd33d30367d0d2a8a",
+        "signature": "cb66f883d120cede42f21ddf023b8653ccb640c33383948cd33d30367d0d2a8a",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@testing-library/react/types/index.d.ts": {
+        "version": "93d72cd6f97ba8fa778d340091a0b25a08ea336a2ac79cd7d33086906b5c498e",
+        "signature": "93d72cd6f97ba8fa778d340091a0b25a08ea336a2ac79cd7d33086906b5c498e",
+        "affectsGlobalScope": false
+      },
+      "./src/hourcell.test.tsx": {
+        "version": "4408f04b30de2e099c3656293b7175134a5a3b9b887d1be6f21561b2e532ddf1",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
+      "./src/setuptests.ts": {
+        "version": "955bd53292cbb77a9e84584c23692367ad5da7303f805cd4b03b40fdc9d2c6bc",
+        "signature": "73fcb74c1fec095a73f0bf6d32005a35dafd562afd06cbac3d506df18423270d",
         "affectsGlobalScope": false
       },
       "./src/utils.test.ts": {
@@ -314,16 +429,6 @@
       "./node_modules/jest-diff/build/index.d.ts": {
         "version": "b4439890c168d646357928431100daac5cbdee1d345a34e6bf6eca9f3abe22bc",
         "signature": "b4439890c168d646357928431100daac5cbdee1d345a34e6bf6eca9f3abe22bc",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/pretty-format/build/types.d.ts": {
-        "version": "5d72971a459517c44c1379dab9ed248e87a61ba0a1e0f25c9d67e1e640cd9a09",
-        "signature": "5d72971a459517c44c1379dab9ed248e87a61ba0a1e0f25c9d67e1e640cd9a09",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/pretty-format/build/index.d.ts": {
-        "version": "02d734976af36f4273d930bea88b3e62adf6b078cf120c1c63d49aa8d8427c5c",
-        "signature": "02d734976af36f4273d930bea88b3e62adf6b078cf120c1c63d49aa8d8427c5c",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/jest/index.d.ts": {
@@ -560,6 +665,11 @@
         "version": "9c4c395e927045b324877acdc4bfb95f128f36bc9f073266a2f0342495075a4f",
         "signature": "9c4c395e927045b324877acdc4bfb95f128f36bc9f073266a2f0342495075a4f",
         "affectsGlobalScope": false
+      },
+      "./node_modules/@types/testing-library__jest-dom/index.d.ts": {
+        "version": "d196da9c61a0bec85db6f6ee9b1f46781d25e0627b1d2bedcaeea8ebb1749559",
+        "signature": "d196da9c61a0bec85db6f6ee9b1f46781d25e0627b1d2bedcaeea8ebb1749559",
+        "affectsGlobalScope": true
       }
     },
     "options": {
@@ -578,7 +688,8 @@
       "types": [
         "react",
         "jest",
-        "node"
+        "node",
+        "@testing-library/jest-dom"
       ],
       "typeRoots": [
         "./node_modules/@types"
@@ -590,6 +701,61 @@
       "configFilePath": "./tsconfig.json"
     },
     "referencedMap": {
+      "./node_modules/@testing-library/dom/types/get-queries-for-element.d.ts": [
+        "./node_modules/@testing-library/dom/types/queries.d.ts"
+      ],
+      "./node_modules/@testing-library/dom/types/index.d.ts": [
+        "./node_modules/@testing-library/dom/types/config.d.ts",
+        "./node_modules/@testing-library/dom/types/events.d.ts",
+        "./node_modules/@testing-library/dom/types/get-node-text.d.ts",
+        "./node_modules/@testing-library/dom/types/get-queries-for-element.d.ts",
+        "./node_modules/@testing-library/dom/types/matches.d.ts",
+        "./node_modules/@testing-library/dom/types/pretty-dom.d.ts",
+        "./node_modules/@testing-library/dom/types/queries.d.ts",
+        "./node_modules/@testing-library/dom/types/query-helpers.d.ts",
+        "./node_modules/@testing-library/dom/types/role-helpers.d.ts",
+        "./node_modules/@testing-library/dom/types/screen.d.ts",
+        "./node_modules/@testing-library/dom/types/suggestions.d.ts",
+        "./node_modules/@testing-library/dom/types/wait-for-dom-change.d.ts",
+        "./node_modules/@testing-library/dom/types/wait-for-element-to-be-removed.d.ts",
+        "./node_modules/@testing-library/dom/types/wait-for-element.d.ts",
+        "./node_modules/@testing-library/dom/types/wait-for.d.ts",
+        "./node_modules/@testing-library/dom/types/wait.d.ts"
+      ],
+      "./node_modules/@testing-library/dom/types/matches.d.ts": [
+        "./node_modules/@types/aria-query/index.d.ts"
+      ],
+      "./node_modules/@testing-library/dom/types/pretty-dom.d.ts": [
+        "./node_modules/pretty-format/build/index.d.ts"
+      ],
+      "./node_modules/@testing-library/dom/types/queries.d.ts": [
+        "./node_modules/@testing-library/dom/types/matches.d.ts",
+        "./node_modules/@testing-library/dom/types/query-helpers.d.ts",
+        "./node_modules/@testing-library/dom/types/wait-for.d.ts"
+      ],
+      "./node_modules/@testing-library/dom/types/query-helpers.d.ts": [
+        "./node_modules/@testing-library/dom/types/matches.d.ts",
+        "./node_modules/@testing-library/dom/types/wait-for.d.ts"
+      ],
+      "./node_modules/@testing-library/dom/types/screen.d.ts": [
+        "./node_modules/@testing-library/dom/types/get-queries-for-element.d.ts",
+        "./node_modules/@testing-library/dom/types/queries.d.ts",
+        "./node_modules/pretty-format/build/index.d.ts"
+      ],
+      "./node_modules/@testing-library/dom/types/wait-for-dom-change.d.ts": [
+        "./node_modules/@testing-library/dom/types/wait-for.d.ts"
+      ],
+      "./node_modules/@testing-library/dom/types/wait-for-element-to-be-removed.d.ts": [
+        "./node_modules/@testing-library/dom/types/wait-for.d.ts"
+      ],
+      "./node_modules/@testing-library/dom/types/wait-for-element.d.ts": [
+        "./node_modules/@testing-library/dom/types/wait-for.d.ts"
+      ],
+      "./node_modules/@testing-library/react/types/index.d.ts": [
+        "./node_modules/@testing-library/dom/types/index.d.ts",
+        "./node_modules/@types/react-dom/index.d.ts",
+        "./node_modules/@types/react-dom/test-utils/index.d.ts"
+      ],
       "./node_modules/@types/d3-scale/index.d.ts": [
         "./node_modules/@types/d3-time/index.d.ts"
       ],
@@ -828,20 +994,26 @@
         "./node_modules/@types/node/stream.d.ts",
         "./node_modules/@types/node/zlib.d.ts"
       ],
+      "./node_modules/@types/react-dom/index.d.ts": [
+        "./node_modules/@types/react/index.d.ts"
+      ],
+      "./node_modules/@types/react-dom/test-utils/index.d.ts": [
+        "./node_modules/@types/react-dom/test-utils/index.d.ts",
+        "./node_modules/@types/react/index.d.ts"
+      ],
       "./node_modules/@types/react/index.d.ts": [
         "./node_modules/@types/prop-types/index.d.ts",
         "./node_modules/@types/react/global.d.ts",
         "./node_modules/@types/scheduler/tracing.d.ts",
         "./node_modules/csstype/index.d.ts"
       ],
-      "./node_modules/@types/styled-components/cssprop.d.ts": [
-        "./node_modules/@types/react/index.d.ts",
-        "./node_modules/@types/styled-components/index.d.ts"
-      ],
       "./node_modules/@types/styled-components/index.d.ts": [
         "./node_modules/@types/hoist-non-react-statics/index.d.ts",
         "./node_modules/@types/react/index.d.ts",
         "./node_modules/csstype/index.d.ts"
+      ],
+      "./node_modules/@types/testing-library__jest-dom/index.d.ts": [
+        "./node_modules/@types/jest/index.d.ts"
       ],
       "./node_modules/jest-diff/build/difflines.d.ts": [
         "./node_modules/jest-diff/build/cleanupsemantic.d.ts",
@@ -886,11 +1058,18 @@
       ],
       "./src/heatmap.tsx": [
         "./node_modules/@types/react/index.d.ts",
+        "./node_modules/@types/styled-components/index.d.ts",
         "./src/classes/heatmapdatastore.ts",
         "./src/hourlabelrow.tsx",
         "./src/hourrow.tsx",
         "./src/types/enums.ts",
         "./src/types/interfaces.ts"
+      ],
+      "./src/hourcell.test.tsx": [
+        "./node_modules/@testing-library/react/types/index.d.ts",
+        "./node_modules/@types/react/index.d.ts",
+        "./src/classes/heatmapdatastore.ts",
+        "./src/hourcell.tsx"
       ],
       "./src/hourcell.tsx": [
         "./node_modules/@types/react/index.d.ts",
@@ -913,11 +1092,6 @@
         "./src/types/enums.ts",
         "./src/types/interfaces.ts"
       ],
-      "./src/index.ts": [
-        "./node_modules/@types/styled-components/cssprop.d.ts",
-        "./src/heatmap.tsx",
-        "./src/hourcell.tsx"
-      ],
       "./src/utils.test.ts": [
         "./src/utils.ts"
       ],
@@ -926,6 +1100,61 @@
       ]
     },
     "exportedModulesMap": {
+      "./node_modules/@testing-library/dom/types/get-queries-for-element.d.ts": [
+        "./node_modules/@testing-library/dom/types/queries.d.ts"
+      ],
+      "./node_modules/@testing-library/dom/types/index.d.ts": [
+        "./node_modules/@testing-library/dom/types/config.d.ts",
+        "./node_modules/@testing-library/dom/types/events.d.ts",
+        "./node_modules/@testing-library/dom/types/get-node-text.d.ts",
+        "./node_modules/@testing-library/dom/types/get-queries-for-element.d.ts",
+        "./node_modules/@testing-library/dom/types/matches.d.ts",
+        "./node_modules/@testing-library/dom/types/pretty-dom.d.ts",
+        "./node_modules/@testing-library/dom/types/queries.d.ts",
+        "./node_modules/@testing-library/dom/types/query-helpers.d.ts",
+        "./node_modules/@testing-library/dom/types/role-helpers.d.ts",
+        "./node_modules/@testing-library/dom/types/screen.d.ts",
+        "./node_modules/@testing-library/dom/types/suggestions.d.ts",
+        "./node_modules/@testing-library/dom/types/wait-for-dom-change.d.ts",
+        "./node_modules/@testing-library/dom/types/wait-for-element-to-be-removed.d.ts",
+        "./node_modules/@testing-library/dom/types/wait-for-element.d.ts",
+        "./node_modules/@testing-library/dom/types/wait-for.d.ts",
+        "./node_modules/@testing-library/dom/types/wait.d.ts"
+      ],
+      "./node_modules/@testing-library/dom/types/matches.d.ts": [
+        "./node_modules/@types/aria-query/index.d.ts"
+      ],
+      "./node_modules/@testing-library/dom/types/pretty-dom.d.ts": [
+        "./node_modules/pretty-format/build/index.d.ts"
+      ],
+      "./node_modules/@testing-library/dom/types/queries.d.ts": [
+        "./node_modules/@testing-library/dom/types/matches.d.ts",
+        "./node_modules/@testing-library/dom/types/query-helpers.d.ts",
+        "./node_modules/@testing-library/dom/types/wait-for.d.ts"
+      ],
+      "./node_modules/@testing-library/dom/types/query-helpers.d.ts": [
+        "./node_modules/@testing-library/dom/types/matches.d.ts",
+        "./node_modules/@testing-library/dom/types/wait-for.d.ts"
+      ],
+      "./node_modules/@testing-library/dom/types/screen.d.ts": [
+        "./node_modules/@testing-library/dom/types/get-queries-for-element.d.ts",
+        "./node_modules/@testing-library/dom/types/queries.d.ts",
+        "./node_modules/pretty-format/build/index.d.ts"
+      ],
+      "./node_modules/@testing-library/dom/types/wait-for-dom-change.d.ts": [
+        "./node_modules/@testing-library/dom/types/wait-for.d.ts"
+      ],
+      "./node_modules/@testing-library/dom/types/wait-for-element-to-be-removed.d.ts": [
+        "./node_modules/@testing-library/dom/types/wait-for.d.ts"
+      ],
+      "./node_modules/@testing-library/dom/types/wait-for-element.d.ts": [
+        "./node_modules/@testing-library/dom/types/wait-for.d.ts"
+      ],
+      "./node_modules/@testing-library/react/types/index.d.ts": [
+        "./node_modules/@testing-library/dom/types/index.d.ts",
+        "./node_modules/@types/react-dom/index.d.ts",
+        "./node_modules/@types/react-dom/test-utils/index.d.ts"
+      ],
       "./node_modules/@types/d3-scale/index.d.ts": [
         "./node_modules/@types/d3-time/index.d.ts"
       ],
@@ -1164,20 +1393,26 @@
         "./node_modules/@types/node/stream.d.ts",
         "./node_modules/@types/node/zlib.d.ts"
       ],
+      "./node_modules/@types/react-dom/index.d.ts": [
+        "./node_modules/@types/react/index.d.ts"
+      ],
+      "./node_modules/@types/react-dom/test-utils/index.d.ts": [
+        "./node_modules/@types/react-dom/test-utils/index.d.ts",
+        "./node_modules/@types/react/index.d.ts"
+      ],
       "./node_modules/@types/react/index.d.ts": [
         "./node_modules/@types/prop-types/index.d.ts",
         "./node_modules/@types/react/global.d.ts",
         "./node_modules/@types/scheduler/tracing.d.ts",
         "./node_modules/csstype/index.d.ts"
       ],
-      "./node_modules/@types/styled-components/cssprop.d.ts": [
-        "./node_modules/@types/react/index.d.ts",
-        "./node_modules/@types/styled-components/index.d.ts"
-      ],
       "./node_modules/@types/styled-components/index.d.ts": [
         "./node_modules/@types/hoist-non-react-statics/index.d.ts",
         "./node_modules/@types/react/index.d.ts",
         "./node_modules/csstype/index.d.ts"
+      ],
+      "./node_modules/@types/testing-library__jest-dom/index.d.ts": [
+        "./node_modules/@types/jest/index.d.ts"
       ],
       "./node_modules/jest-diff/build/difflines.d.ts": [
         "./node_modules/jest-diff/build/cleanupsemantic.d.ts",
@@ -1223,16 +1458,32 @@
         "./src/types/enums.ts",
         "./src/types/interfaces.ts"
       ],
-      "./src/index.ts": [
-        "./src/heatmap.tsx",
-        "./src/hourcell.tsx"
-      ],
       "./src/utils.ts": [
         "./src/types/interfaces.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
+      "./documentation/src/app.d.ts",
       "./js/out.d.ts",
+      "./node_modules/@testing-library/dom/types/config.d.ts",
+      "./node_modules/@testing-library/dom/types/events.d.ts",
+      "./node_modules/@testing-library/dom/types/get-node-text.d.ts",
+      "./node_modules/@testing-library/dom/types/get-queries-for-element.d.ts",
+      "./node_modules/@testing-library/dom/types/index.d.ts",
+      "./node_modules/@testing-library/dom/types/matches.d.ts",
+      "./node_modules/@testing-library/dom/types/pretty-dom.d.ts",
+      "./node_modules/@testing-library/dom/types/queries.d.ts",
+      "./node_modules/@testing-library/dom/types/query-helpers.d.ts",
+      "./node_modules/@testing-library/dom/types/role-helpers.d.ts",
+      "./node_modules/@testing-library/dom/types/screen.d.ts",
+      "./node_modules/@testing-library/dom/types/suggestions.d.ts",
+      "./node_modules/@testing-library/dom/types/wait-for-dom-change.d.ts",
+      "./node_modules/@testing-library/dom/types/wait-for-element-to-be-removed.d.ts",
+      "./node_modules/@testing-library/dom/types/wait-for-element.d.ts",
+      "./node_modules/@testing-library/dom/types/wait-for.d.ts",
+      "./node_modules/@testing-library/dom/types/wait.d.ts",
+      "./node_modules/@testing-library/react/types/index.d.ts",
+      "./node_modules/@types/aria-query/index.d.ts",
       "./node_modules/@types/d3-scale/index.d.ts",
       "./node_modules/@types/d3-time/index.d.ts",
       "./node_modules/@types/hoist-non-react-statics/index.d.ts",
@@ -1284,11 +1535,13 @@
       "./node_modules/@types/node/worker_threads.d.ts",
       "./node_modules/@types/node/zlib.d.ts",
       "./node_modules/@types/prop-types/index.d.ts",
+      "./node_modules/@types/react-dom/index.d.ts",
+      "./node_modules/@types/react-dom/test-utils/index.d.ts",
       "./node_modules/@types/react/global.d.ts",
       "./node_modules/@types/react/index.d.ts",
       "./node_modules/@types/scheduler/tracing.d.ts",
-      "./node_modules/@types/styled-components/cssprop.d.ts",
       "./node_modules/@types/styled-components/index.d.ts",
+      "./node_modules/@types/testing-library__jest-dom/index.d.ts",
       "./node_modules/csstype/index.d.ts",
       "./node_modules/jest-diff/build/cleanupsemantic.d.ts",
       "./node_modules/jest-diff/build/difflines.d.ts",
@@ -1335,11 +1588,11 @@
       "./src/classes/heatmapdatastore.ts",
       "./src/daylabelcell.tsx",
       "./src/heatmap.tsx",
-      "./src/hourcell.test.ts",
+      "./src/hourcell.test.tsx",
       "./src/hourcell.tsx",
       "./src/hourlabelrow.tsx",
       "./src/hourrow.tsx",
-      "./src/index.ts",
+      "./src/setuptests.ts",
       "./src/types/enums.ts",
       "./src/types/interfaces.ts",
       "./src/utils.test.ts",
