@@ -1,6 +1,6 @@
 {
   "name": "react-hour-heatmap",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "an react component for a heatmap per hour for one week span",
   "main": "dist/index.js",
   "scripts": {
