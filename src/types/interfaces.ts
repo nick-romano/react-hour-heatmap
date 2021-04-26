@@ -32,7 +32,7 @@ export interface IHeatmapDataStore {
 export interface IHeatmap {
     data: object[],
     dateColumn: string,
-    valueColumn: string,
+    valueColumn?: string,
     popup?: React.ReactNode,
     colors?: any[],
     domain?: any[]

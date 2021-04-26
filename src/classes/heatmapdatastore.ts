@@ -1,6 +1,6 @@
 import { IDay, IHeatmapDataStore, IHour, IMinute } from '../types/interfaces';
 import { scaleQuantile } from 'd3-scale';
-import { generateDays } from '../utils';
+import { generateDays, isDate, readDate } from '../utils';
 
 const defaultColors = ['#fff', '#a1dab4', '#41b6c4', '#2c7fb8', '#253494'];
 // ['#feedde', '#fdd0a2', '#fdae6b', '#fd8d3c', '#f16913', '#d94801', '#8c2d04'];
@@ -35,9 +35,6 @@ export default class HeatmapDataStore {
     calcDomain() {
         let uniqueValues: number[] = [];
         this.days.forEach((day: IDay) => {
-            // const sum = day.hours.reduce((a: number, b: IHour) => {
-            //     return a + b.value
-            // }, 0);
             day.hours.forEach((hour: IHour) => {
                 if (!(uniqueValues.indexOf(hour.value) > -1)) {
                     uniqueValues.push(hour.value);
@@ -56,12 +53,13 @@ export default class HeatmapDataStore {
         return colorScale;
     };
 
-    static fromRows({ rows, dateColumn, valueColumn }: { rows: object[], dateColumn: string, valueColumn: string }) {
+    static fromRows({ rows, dateColumn, valueColumn }: { rows: object[], dateColumn: string, valueColumn?: string }) {
         const { M, T, W, Th, F, Sa, Su } = generateDays();
         const dayMap: { [key: number]: IDay; } = {0: Su, 1: M, 2: T, 3: W, 4: Th, 5: F, 6: Sa};
 
         rows.forEach((r: any) => {
-            const date = r[dateColumn] as Date;
+            // check date column to see if its a Date type;
+            const date = !isDate(r[dateColumn]) ? readDate(r[dateColumn], true) : r[dateColumn] as Date;
             const dayInt = date.getDay();
             const hourInt = date.getHours();
             const minuteInt = date.getMinutes();
@@ -70,7 +68,12 @@ export default class HeatmapDataStore {
             const hour: IHour = day.hours[hourInt];
             const minute: IMinute = hour.minutes[minuteInt];
 
-            const value = r[valueColumn] as number;
+            let value: number;
+            if (valueColumn) {
+                value = r[valueColumn] as number;
+            } else {
+                value = 1;
+            }
 
             hour.value = hour.value + value;
             minute.data = r;

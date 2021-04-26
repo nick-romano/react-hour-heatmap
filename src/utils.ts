@@ -15,3 +15,16 @@ export const generateDays = () => ({
     Th: createDay(), F: createDay(), Sa: createDay(),
     Su: createDay()
 })
+
+
+export const isDate = (val: any) => {
+    return typeof val.getMonth === 'function'
+};
+
+export const readDate = (val: string, adjustTimezone?: boolean) => {
+    let date = new Date(val);
+    if(adjustTimezone) {
+        date = new Date((date.valueOf() - date.getTimezoneOffset()*1000*60));
+    }
+    return date;
+}

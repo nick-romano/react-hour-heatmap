@@ -156,11 +156,6 @@
         "signature": "506b80b9951c9381dc5f11897b31fca5e2a65731d96ddefa19687fbc26b23c6e",
         "affectsGlobalScope": true
       },
-      "./documentation/src/app.d.ts": {
-        "version": "edc1323962b47808b83df2d2683cbb1c7c9a81af869ec1aad81cf5f076acee83",
-        "signature": "edc1323962b47808b83df2d2683cbb1c7c9a81af869ec1aad81cf5f076acee83",
-        "affectsGlobalScope": false
-      },
       "./js/out.d.ts": {
         "version": "d39b27062ceaaf17e1301eefea9f97bf4f66ac35e25b06d2e40dcfa2e1ff7c04",
         "signature": "d39b27062ceaaf17e1301eefea9f97bf4f66ac35e25b06d2e40dcfa2e1ff7c04",
@@ -227,8 +222,8 @@
         "affectsGlobalScope": false
       },
       "./src/types/interfaces.ts": {
-        "version": "fe9312fb145708bea649da7b05e5ef229cd63eb9ecd64998eab56c48e85a14ff",
-        "signature": "6072cb1f24d555b3c08eda7d76c760e68b4d15ddd71000b71377cab3f031fbfa",
+        "version": "da2edcf06ed9ce5827b735ad07bf15213e65e2fac973ef4fddf007e2ebb7cda0",
+        "signature": "73902cc4447a06ef38c402951d008c2d1137d4943e7f11defb00f345603ace5d",
         "affectsGlobalScope": false
       },
       "./src/hourcell.tsx": {
@@ -257,13 +252,13 @@
         "affectsGlobalScope": false
       },
       "./src/utils.ts": {
-        "version": "ce467d245fa34cd2fa83592230ca8fe6045b2f0a873b1e27f97d257577e85bee",
-        "signature": "1cc7fb7fb9f447866fc894b50147571ecb7d2de2a29c76c61d5e113563d77a3e",
+        "version": "4906b10cbbe4169034a2a670dc92c85dcc1661e5a2ba24c8a5cf0d9baec0cffa",
+        "signature": "ac6196766ebbfa2e8323fb30b56f79848990b8f36bad23a6cdf747d1fb05c07f",
         "affectsGlobalScope": false
       },
       "./src/classes/heatmapdatastore.ts": {
-        "version": "780b19b80d5613145eca51c9797b93300861ca3e4d828e2477a9c2605a580275",
-        "signature": "60c4abe969064b39c4878ebd7ac06682585add5d54b8f4d55831320b801da488",
+        "version": "3e1f54cfd1cf3f858045262cf8244edf7fe792263334bead4a08227755e13295",
+        "signature": "bfd2d5477cbf8db25abe4f67c9c55689be9a7ac2314133e4d43124892baedf19",
         "affectsGlobalScope": false
       },
       "./src/heatmap.tsx": {
@@ -1463,7 +1458,6 @@
       ]
     },
     "semanticDiagnosticsPerFile": [
-      "./documentation/src/app.d.ts",
       "./js/out.d.ts",
       "./node_modules/@testing-library/dom/types/config.d.ts",
       "./node_modules/@testing-library/dom/types/events.d.ts",
