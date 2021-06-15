@@ -222,13 +222,13 @@
         "affectsGlobalScope": false
       },
       "./src/types/interfaces.ts": {
-        "version": "da2edcf06ed9ce5827b735ad07bf15213e65e2fac973ef4fddf007e2ebb7cda0",
-        "signature": "73902cc4447a06ef38c402951d008c2d1137d4943e7f11defb00f345603ace5d",
+        "version": "5f4ba8d9c9b12bc6a53fb0c8b8edf4111f6d6b94cc271bc74cdb7f229f5aade6",
+        "signature": "32ed2c5189da1a86a5376101d6fe07f94d3e7b2aa02109b8894f113d339547f0",
         "affectsGlobalScope": false
       },
       "./src/hourcell.tsx": {
-        "version": "b876612bc82ee53c40d811bcc6ff2c93ab59f3caae85365e39ed66e830e9a9f9",
-        "signature": "f030a434f4c1471285b00877d92b1585e2ae2c9134881807417f10252546f270",
+        "version": "77e631457c68846e6f0acd4ebaea10bc44e5c7b4ee39518db2c8b59af61d121e",
+        "signature": "39f087f050c02868daea6700b326d2c5f0817438aa55f63e7d3ed86972f3736c",
         "affectsGlobalScope": false
       },
       "./src/types/enums.ts": {
@@ -251,14 +251,19 @@
         "signature": "76ecf8edd438ddf3c43370bd18756ffa1f63fa2c95463d5619d28c526d7731dd",
         "affectsGlobalScope": false
       },
+      "./src/strftime.ts": {
+        "version": "b665e5e6e05eb05f36e78aa4eed3a9327941c58fe1b66f07dd6209316b3cff3b",
+        "signature": "0c3271b7ea0d5c07600b1e53e941d220ce4c3b586922471ebd8008ce50722833",
+        "affectsGlobalScope": false
+      },
       "./src/utils.ts": {
-        "version": "4906b10cbbe4169034a2a670dc92c85dcc1661e5a2ba24c8a5cf0d9baec0cffa",
-        "signature": "ac6196766ebbfa2e8323fb30b56f79848990b8f36bad23a6cdf747d1fb05c07f",
+        "version": "9ae39b5691c43ea2f160164828ecc95065d2f7ab148c40c43e0e72cfe490400d",
+        "signature": "490add7da3342db28bf4f881f27c3e835ec84c2e5ced3dfe8c241b1459437fb9",
         "affectsGlobalScope": false
       },
       "./src/classes/heatmapdatastore.ts": {
-        "version": "3e1f54cfd1cf3f858045262cf8244edf7fe792263334bead4a08227755e13295",
-        "signature": "bfd2d5477cbf8db25abe4f67c9c55689be9a7ac2314133e4d43124892baedf19",
+        "version": "1d6821fa7f01f3f2f3fb02e0648039e9b7a0abee7a9cef130a016d9e49400862",
+        "signature": "e909824b4437c04aca755283159bdb9998e35d7de9991faaab4d861636ca3893",
         "affectsGlobalScope": false
       },
       "./src/heatmap.tsx": {
@@ -1091,6 +1096,7 @@
         "./src/utils.ts"
       ],
       "./src/utils.ts": [
+        "./src/strftime.ts",
         "./src/types/interfaces.ts"
       ]
     },
@@ -1587,6 +1593,7 @@
       "./src/hourlabelrow.tsx",
       "./src/hourrow.tsx",
       "./src/setuptests.ts",
+      "./src/strftime.ts",
       "./src/types/enums.ts",
       "./src/types/interfaces.ts",
       "./src/utils.test.ts",

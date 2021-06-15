@@ -1,8 +1,17 @@
-import { IDay, IHeatmapDataStore, IHour, IMinute } from '../types/interfaces';
+import { IDay, IHeatmapDataStore, IHour, IHourHeatmapFromRows, IMinute } from '../types/interfaces';
 import { scaleQuantile } from 'd3-scale';
-import { generateDays, isDate, readDate } from '../utils';
+import { generateDays, isDate, readDate, getTimeString } from '../utils';
 
-const defaultColors = ['#fff', '#a1dab4', '#41b6c4', '#2c7fb8', '#253494'];
+const defaultColors = [
+    "#edf8e9",
+    "#c7e9c0",
+    "#a1d99b",
+    "#74c476",
+    "#41ab5d",
+    "#238b45",
+    "#005a32"
+];
+// ['#fff', '#a1dab4', '#41b6c4', '#2c7fb8', '#253494'];
 // ['#feedde', '#fdd0a2', '#fdae6b', '#fd8d3c', '#f16913', '#d94801', '#8c2d04'];
 
 export default class HeatmapDataStore {
@@ -53,10 +62,12 @@ export default class HeatmapDataStore {
         return colorScale;
     };
 
-    static fromRows({ rows, dateColumn, valueColumn }: { rows: object[], dateColumn: string, valueColumn?: string }) {
+    static fromRows({ rows, dateColumn, valueColumn }: IHourHeatmapFromRows) {
         const { M, T, W, Th, F, Sa, Su } = generateDays();
-        const dayMap: { [key: number]: IDay; } = {0: Su, 1: M, 2: T, 3: W, 4: Th, 5: F, 6: Sa};
 
+        const dayMap: { [key: number]: IDay; } = { 0: Su, 1: M, 2: T, 3: W, 4: Th, 5: F, 6: Sa };
+
+        // iterate through rows and bin to 'hour' containers;
         rows.forEach((r: any) => {
             // check date column to see if its a Date type;
             const date = !isDate(r[dateColumn]) ? readDate(r[dateColumn], true) : r[dateColumn] as Date;
@@ -64,22 +75,29 @@ export default class HeatmapDataStore {
             const hourInt = date.getHours();
             const minuteInt = date.getMinutes();
 
+            console.log(getTimeString(date));
+
             const day: IDay = dayMap[dayInt];
             const hour: IHour = day.hours[hourInt];
             const minute: IMinute = hour.minutes[minuteInt];
 
             let value: number;
+
+            // if a value column is specified, use that as the 'value', else assume we 
+            // want to use a count statistic for our binning.
             if (valueColumn) {
                 value = r[valueColumn] as number;
             } else {
                 value = 1;
             }
-
+            // sum up values
             hour.value = hour.value + value;
+            // set information to the IMinute container;
             minute.data = r;
         });
 
-        return new HeatmapDataStore({M, T, W, Th, F, Sa, Su});
+        return new HeatmapDataStore({ M, T, W, Th, F, Sa, Su });
     }
 
 }
+

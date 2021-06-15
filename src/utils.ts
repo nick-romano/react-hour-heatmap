@@ -1,4 +1,5 @@
 import { IDay } from './types/interfaces';
+import strfTime from './strfTime';
 
 export const createDay = (): IDay => ({
     hours: [...Array(24).keys()].map((r: number) => ({
@@ -28,3 +29,25 @@ export const readDate = (val: string, adjustTimezone?: boolean) => {
     }
     return date;
 }
+
+const weekday=new Array(7);
+weekday[0]="Monday";
+weekday[1]="Tuesday";
+weekday[2]="Wednesday";
+weekday[3]="Thursday";
+weekday[4]="Friday";
+weekday[5]="Saturday";
+weekday[6]="Sunday";
+
+export const getDayOfWeek = (day: number) => {
+    return weekday[day];
+}
+
+
+export const getTimeString = (date: Date) => {
+    return strfTime('%d - %H:%M', date);
+}
+
+
+
+

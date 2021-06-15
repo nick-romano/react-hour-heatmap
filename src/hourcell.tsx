@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Cell } from "styled-css-grid";
 import styled from 'styled-components';
 import Popup from 'reactjs-popup';
-import { IHour } from "./types/interfaces";
+import { IHourCell } from "./types/interfaces";
 
 
 const _HourCell = styled(Cell)`
@@ -26,13 +26,6 @@ const contentStyle = {
   background: "#000000c9",
   color: '#f7f7f7',
   border: "0px solid"
-}
-
-export interface IHourCell {
-  data: IHour,
-  scale: (arg0: any) => any,
-  height?: number,
-  popup?: React.ReactNode
 }
 
 const HourCell: React.FC<IHourCell> = ({ data, scale, height, popup }: IHourCell) => {

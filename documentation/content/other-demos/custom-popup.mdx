@@ -58,9 +58,9 @@ export default function App() {
             <Card>
               <CardHeader title="My Custom Popup" />
               <CardContent>
-                Total Sum: {data.data.value}
+                Sum: {data.data.value}
                 <Divider />
-                Total Records: {data.data.minutes.filter(r => r.data.date).length}
+                Total # of Records Binned: {data.data.minutes.filter(r => r.data.date).length}
               </CardContent>
             </Card>
         )}
