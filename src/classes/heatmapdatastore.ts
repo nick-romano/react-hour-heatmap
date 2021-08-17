@@ -1,6 +1,6 @@
 import { IDay, IHeatmapDataStore, IHour, IHourHeatmapFromRows, IMinute } from '../types/interfaces';
 import { scaleQuantile } from 'd3-scale';
-import { generateDays, isDate, readDate, getTimeString } from '../utils';
+import { generateDays, isDate, readDate } from '../utils';
 
 const defaultColors = [
     "#edf8e9",
@@ -74,8 +74,6 @@ export default class HeatmapDataStore {
             const dayInt = date.getDay();
             const hourInt = date.getHours();
             const minuteInt = date.getMinutes();
-
-            console.log(getTimeString(date));
 
             const day: IDay = dayMap[dayInt];
             const hour: IHour = day.hours[hourInt];

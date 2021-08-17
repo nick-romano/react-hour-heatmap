@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `React-Heatmap Documentation`,
     name: `Nick Romano`,
-    siteUrl: `https://gatsby-theme-document.netlify.com`,
+    siteUrl: `https://nick-romano.github.io/react-hour-heatmap/`,
     description: `This is my description that will be used in the meta tags and important for search results`,
     social: [
       {

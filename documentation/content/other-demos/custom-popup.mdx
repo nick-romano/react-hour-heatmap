@@ -3,9 +3,8 @@ title: 'Custom Popup'
 description: 'Feed custom popup component'
 ---
 
-# Custom Colors
-- Use to `colors` prop to insert your own color to be used to scale the data. Provide as many colors 
-as you'd like. here we set `colors={['#fff','#feb24c','#f03b20']}`
+# Custom Popup
+- Use to `popup` prop to insert your functional component and render a custom popup.
 
 # Code Demo
 
@@ -24,16 +23,16 @@ import { Card, CardHeader, CardContent, Divider } from "@material-ui/core";
   ]}
   valueColumn="count"
   dateColumn="date"
-  popup={(data) => { console.log(data); return (
+  popup={(heatmap) => (
       <Card>
         <CardHeader title="My Custom Popup" />
         <CardContent>
-          Total Sum: {data.data.value}
+          Total Sum: {heatmap.data.value}
           <Divider />
-          Total Records: {data.data.minutes.filter(r => r.data.date).length}
+          Total Records: {heatmap.data.minutes.filter(r => r.data.date).length}
         </CardContent>
       </Card>
-  )}}
+  )}
 />
 
 ```jsx
@@ -54,20 +53,21 @@ export default function App() {
         ]}
         valueColumn="count"
         dateColumn="date"
-        popup={(data) => (
+        popup={
+          (heatmap) => (
             <Card>
               <CardHeader title="My Custom Popup" />
               <CardContent>
-                Sum: {data.data.value}
+                Sum: {heatmap.data.value}
                 <Divider />
-                Total # of Records Binned: {data.data.minutes.filter(r => r.data.date).length}
+                Total # of Records Binned: {heatmap.data.minutes.filter(r => r.data.date).length}
               </CardContent>
             </Card>
-        )}
+          )
+        }
 />
     </div>
   );
 }
 
 ```
-[Code sandbox](https://codesandbox.io/s/adoring-bartik-29nzt?file=/src/App.js)
