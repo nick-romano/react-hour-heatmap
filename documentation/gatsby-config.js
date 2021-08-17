@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/react-hour-heatmap",
   siteMetadata: {
     title: `React-Heatmap Documentation`,
     name: `Nick Romano`,
