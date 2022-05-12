@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import { Cell } from "styled-css-grid";
+import React from 'react';
+import { Cell } from 'styled-css-grid';
 import styled from 'styled-components';
-
 
 const _DayLabelCell = styled(Cell)`
   font-size: 12px;
@@ -13,10 +12,10 @@ const _DayLabelCell = styled(Cell)`
   font-variant: all-small-caps;
 `;
 
-const DayLabelCell = (props: any) => {
+function DayLabelCell(props: any) {
   return (
-    <_DayLabelCell center middle {...props} ></_DayLabelCell>
-  )
+    <_DayLabelCell center middle {...props} />
+  );
 }
 
 export default DayLabelCell;

@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import { Cell } from "styled-css-grid";
+import React from 'react';
+import { Cell } from 'styled-css-grid';
 import styled from 'styled-components';
 import Popup from 'reactjs-popup';
-import { IHourCell } from "./types/interfaces";
-
+import { IHourCell } from './types/interfaces';
 
 const _HourCell = styled(Cell)`
   font-size: 12px;
@@ -22,27 +21,29 @@ const _HourCell = styled(Cell)`
 `;
 
 const contentStyle = {
-  width: "unset",
-  background: "#000000c9",
+  width: 'unset',
+  background: '#000000c9',
   color: '#f7f7f7',
-  border: "0px solid",
-  borderRadius: "4px",
-  padding: "4px"
-}
+  border: '0px solid',
+  borderRadius: '4px',
+  padding: '4px',
+};
 
-const HourCell: React.FC<IHourCell> = ({ data, scale, height, popup }: IHourCell) => {
-
+const HourCell: React.FC<IHourCell> = ({
+  data, scale, height, popup,
+}: IHourCell) => {
   const CustomPopup = popup;
 
   return (
     <div role="hour-cell">
       <Popup
-        trigger={open => (
+        trigger={(open) => (
           <_HourCell
-            center middle
+            center
+            middle
             height={height}
             style={{ background: scale(data.value) }}
-          ></_HourCell>
+          />
         )}
         closeOnDocumentClick
         on={['hover', 'focus', 'click']}
@@ -58,7 +59,7 @@ const HourCell: React.FC<IHourCell> = ({ data, scale, height, popup }: IHourCell
         </span>
       </Popup>
     </div>
-  )
-}
+  );
+};
 
 export default HourCell;
