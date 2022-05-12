@@ -25,7 +25,9 @@ const contentStyle = {
   width: "unset",
   background: "#000000c9",
   color: '#f7f7f7',
-  border: "0px solid"
+  border: "0px solid",
+  borderRadius: "4px",
+  padding: "4px"
 }
 
 const HourCell: React.FC<IHourCell> = ({ data, scale, height, popup }: IHourCell) => {
@@ -44,7 +46,7 @@ const HourCell: React.FC<IHourCell> = ({ data, scale, height, popup }: IHourCell
         )}
         closeOnDocumentClick
         on={['hover', 'focus', 'click']}
-        contentStyle={contentStyle}
+        contentStyle={!popup ? contentStyle : {}}
         position={['top center', 'bottom right', 'bottom left']}
         keepTooltipInside=".tooltipBoundary"
         arrow={false}

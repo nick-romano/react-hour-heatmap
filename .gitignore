@@ -4,3 +4,4 @@
 /js
 /coverage
 *.DS_Store
+*.rollup.cache
